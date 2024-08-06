@@ -17,9 +17,9 @@ Open the candb.sql file in a MySQL-compatible IDE (like MySQL Workbench) and run
 ### Update MySQL Connector Credentials:
 
 In Main_Game_Func.py and stfunc.py, update the username and password fields in the MySQL connector section with your MySQL database credentials.
+
 _db = c.connect(host='127.0.0.1', user='your_username', password='your_password', database='candb')_
 ### Run the Main Game:
 
-Execute the Main_Game_Func.py file using Python to start the game.
-_python Main_Game_Func.py_
+Execute the Main_Game_Func.py file using Python then call Main_Game_Func() in the console to start the game.
 
