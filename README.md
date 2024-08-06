@@ -10,7 +10,7 @@ An application for the Cows and Bulls game. Cows and Bulls is a number guessing 
 
 **candb.sql:** Contains the schema and initial data for the MySQL database used to store game statistics.
 
-## How to Run the Code
+## Running the Code
 ### Set up the MySQL Database:
 
 Open the candb.sql file in a MySQL-compatible IDE (like MySQL Workbench) and run the script to create the database and the data table.
