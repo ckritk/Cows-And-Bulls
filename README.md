@@ -1,25 +1,44 @@
 # CowsAndBulls
-An application for the Cows and Bulls game. Cows and Bulls is a number guessing game where the player tries to guess a secret code within a limited number of attempts. Each guess results in feedback in the form of "cows" (correct digits in the correct position) and "bulls" (correct digits in the wrong position). The player wins by correctly guessing the entire code.
 
-## Project Structure
-**Main_Game_Func.py:** Contains the main game logic and the GUI setup using Tkinter. It includes functions to start the game, handle user inputs, and update game statistics.
+## Overview
+Cows and Bulls is a number guessing game where the player tries to guess a secret code within a limited number of attempts. Each guess provides feedback in the form of "cows" (correct digits in the correct position) and "bulls" (correct digits in the wrong position). The player wins by correctly guessing the entire code.
 
-**stfunc.py:** Provides functionalities to display game statistics, such as the number of games played, won, lost, and the best time records.
+## Tech Stack
+- **Python:** Programming language used for game logic and GUI.
+- **Tkinter:** GUI library used for the game's user interface.
+- **MySQL:** Database system used to store game statistics.
 
-**ProgrammableTimerApp.py:** Implements a timer used in the game to keep track of the duration of each game.
+## Features
+- **Main Game Logic:** Core game functionality and user interface implemented with Tkinter.
+- **Game Statistics:** Tracks and displays game statistics, including games played, won, lost, and best times.
 
-**candb.sql:** Contains the schema and initial data for the MySQL database used to store game statistics.
+## Usage
 
-## Running the Code
-### Set up the MySQL Database:
+### Set up the MySQL Database
+1. Open the `candb.sql` file in a MySQL-compatible IDE (such as MySQL Workbench).
+2. Run the script to create the database and data table:
+   ```bash
+   mysql -u your_username -p < candb.sql
+   ```
 
-Open the candb.sql file in a MySQL-compatible IDE (like MySQL Workbench) and run the script to create the database and the data table.
-### Update MySQL Connector Credentials:
+### Update MySQL Connector Credentials
+1. Open `Main_Game_Func.py` and `stfunc.py`.
+2. Update the MySQL connector credentials with your database details:
+   ```python
+   db = c.connect(host='127.0.0.1', user='your_username', password='your_password', database='candb')
+   ```
 
-In Main_Game_Func.py and stfunc.py, update the username and password fields in the MySQL connector section with your MySQL database credentials.
+### Run the Main Game
+1. Execute the `Main_Game_Func.py` file using Python:
+   ```bash
+   python Main_Game_Func.py
+   ```
+2. Start the game by calling the `Main_Game_Func()` function in the console:
+   ```python
+   Main_Game_Func()
+   ```
 
-_db = c.connect(host='127.0.0.1', user='your_username', password='your_password', database='candb')_
-### Run the Main Game:
+## Contributions
+Contributions to the Cows and Bulls project are welcome. If you'd like to contribute, please submit a pull request with your changes, and we'll review it for inclusion in the project.
 
-Execute the Main_Game_Func.py file using Python then call Main_Game_Func() in the console to start the game.
-
+We appreciate your contributions and look forward to collaborating with you!
