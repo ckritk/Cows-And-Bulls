@@ -12,7 +12,7 @@ Cows and Bulls is a number guessing game where the player tries to guess a secre
 - **Main Game Logic:** Core game functionality and user interface implemented with Tkinter.
 - **Game Statistics:** Tracks and displays game statistics, including games played, won, lost, and best times.
 
-## Usage
+## Getting Started
 
 ### Set up the MySQL Database
 1. Open the `candb.sql` file in a MySQL-compatible IDE (such as MySQL Workbench).
@@ -37,8 +37,3 @@ Cows and Bulls is a number guessing game where the player tries to guess a secre
    ```python
    Main_Game_Func()
    ```
-
-## Contributions
-Contributions to the Cows and Bulls project are welcome. If you'd like to contribute, please submit a pull request with your changes, and we'll review it for inclusion in the project.
-
-We appreciate your contributions and look forward to collaborating with you!
